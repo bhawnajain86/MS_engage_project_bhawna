@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Book Recommendation System</title>
+    <link rel="icon" type="image/x-icon" href="../static/e2.png">
+    <link rel="stylesheet" type='text/css' href="{{ url_for('static',filename='style.css') }}">
+    <script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Yatra+One&display=swap" rel="stylesheet">
+  </head>
+  <style>
+    body{
+      
+		background-image: url('https://www.erisee.org/wp-content/uploads/2020/03/book_6.jpg');
+		background-size: cover;
+    background-repeat: no-repeat;
+    }
+    .submit{
+      padding: 1rem;
+      font-size: 1rem;
+      background-color:darksalmon;
+      border:solid 5px brown;
+      color: brown;
+    }
+    .submit:hover{
+      background-color:brown;
+      color: white;
+      
+    }
+    a{
+      color: whitesmoke;
+      text-decoration: none;
+    }
+    a:hover{
+      text-decoration: underline;
+      text-shadow: 0 0 5px #F0F00F, 0 0 3px #F08FF1,0 0 9px #0F0FF0;
+    }
+  </style>
+  <body>
+    <!--Website Title -->
+    
+    <div class="container">
+
+      <h2 class="container-heading1" style="color: navy;margin-left: -8rem;"><span class="heading_font1"><b><u>Book Recommendation</span></u></b></h2>
+      
+    </div>
+
+    <!--Results -->
+    <div class="results" style="color: saddlebrown;">
+      <h1><b>Recommended Books for {{ book }}</b></h1>
+      <h2 style="color: whitesmoke; text-shadow: 0 0 5px #FF0000, 0 0 3px #00FF00,0 0 9px #0000FF;">{% for i in range(10) %}
+        <p><a href="{{ links[i] }}"> <em> {{ recommendation[i] }} </em></a></p>
+      {% endfor %}</h2>
+    </div>
+  </div>
+  <center style="padding-left:19em;;">
+  <a href="/" class="bttn submit"><b>Go Back</b></a>
+</center>
+  <div style="padding: 2rem;">
+
+  </div>
+  </body>
+</html>
