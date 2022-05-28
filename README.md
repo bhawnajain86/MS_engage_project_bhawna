@@ -16,7 +16,7 @@ The code uses the following libraries:
 - pandas
 
 ## To run this project
-1. Download code as zip and data from urlv[here] (https://www.kaggle.com/mohitnirgulkar/book-recommendation-data) collected by [Cai-Nicolas Ziegler](http://www2.informatik.uni-freiburg.de/~cziegler/BX/)
+1. Download code as zip and data from url [here] (https://www.kaggle.com/mohitnirgulkar/book-recommendation-data) collected by [Cai-Nicolas Ziegler](http://www2.informatik.uni-freiburg.de/~cziegler/BX/)
 2. Open command-prompt from that location.
 3. Run the app.py file using > python app.py 
 4. This will then open a live URL as localhost
